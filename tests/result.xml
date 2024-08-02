@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites><testsuite name="pytest" errors="0" failures="2" skipped="0" tests="3" time="105.924" timestamp="2024-08-01T18:06:21.413005" hostname="vig38-h03-89-89-89-124.dsl.sta.abo.bbox.fr"><testcase classname="test_New_Delivery.TestNewDelivery" name="test_AdminNewDelivery[GetData0]" time="57.900" /><testcase classname="test_Order.TestOrder" name="test_AdminOrder[GetData0]" time="23.628"><failure message="selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//h6[text()='Basil Chicken Fried Rice']&quot;}&#10;  (Session info: chrome=127.0.6533.74); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception&#10;Stacktrace:&#10;0   chromedriver                        0x000000010a8d5838 chromedriver + 5179448&#10;1   chromedriver                        0x000000010a8cd26a chromedriver + 5145194&#10;2   chromedriver                        0x000000010a4442b0 chromedriver + 389808&#10;3   chromedriver                        0x000000010a4903e1 chromedriver + 701409&#10;4   chromedriver                        0x000000010a490691 chromedriver + 702097&#10;5   chromedriver                        0x000000010a4d2464 chromedriver + 971876&#10;6   chromedriver                        0x000000010a4b27dd chromedriver + 841693&#10;7   chromedriver                        0x000000010a4cfb9b chromedriver + 961435&#10;8   chromedriver                        0x000000010a4b2553 chromedriver + 841043&#10;9   chromedriver                        0x000000010a4837f6 chromedriver + 649206&#10;10  chromedriver                        0x000000010a48405e chromedriver + 651358&#10;11  chromedriver                        0x000000010a898aa0 chromedriver + 4930208&#10;12  chromedriver                        0x000000010a89d9b6 chromedriver + 4950454&#10;13  chromedriver                        0x000000010a89e085 chromedriver + 4952197&#10;14  chromedriver                        0x000000010a87ae69 chromedriver + 4808297&#10;15  chromedriver                        0x000000010a89e379 chromedriver + 4952953&#10;16  chromedriver                        0x000000010a86c7c4 chromedriver + 4749252&#10;17  chromedriver                        0x000000010a8bd548 chromedriver + 5080392&#10;18  chromedriver                        0x000000010a8bd707 chromedriver + 5080839&#10;19  chromedriver                        0x000000010a8cce4e chromedriver + 5144142&#10;20  libsystem_pthread.dylib             0x00007ff810cbe202 _pthread_start + 99&#10;21  libsystem_pthread.dylib             0x00007ff810cb9bab thread_start + 15">self = &lt;tests.test_Order.TestOrder object at 0x10cbe9e20&gt;
+GetData = {'Email': 'musaumer1@mailinator.com', 'Password': '123456'}
+
+    def test_AdminOrder(self, GetData):
+        log = self.GetLogger()
+        signin = SignIn(self.driver)
+        yourorder = YourOrders(self.driver)
+        self.driver.implicitly_wait(5)
+        signin.Get_Email().send_keys(GetData["Email"])
+        log.info("Adding Email")
+        signin.Get_Password().send_keys(GetData["Password"])
+        log.info("Adding Password")
+        signin.SignIn_Button().click()
+        log.info("Clicking on Sign in Button ")
+        time.sleep(5)
+        log.info("Clicking on Dish")
+&gt;       yourorder.Thai_item().click()
+
+test_Order.py:33: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+../PageObjects/YourOrders.py:32: in Thai_item
+    return self.driver.find_element(*YourOrders.thai_item1)
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/selenium/webdriver/remote/webdriver.py:741: in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/selenium/webdriver/remote/webdriver.py:347: in execute
+    self.error_handler.check_response(response)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = &lt;selenium.webdriver.remote.errorhandler.ErrorHandler object at 0x10dd7daf0&gt;
+response = {'status': 404, 'value': '{"value":{"error":"no such element","message":"no such element: Unable to locate element: {\...7ff810cbe202 _pthread_start + 99\\n21  libsystem_pthread.dylib             0x00007ff810cb9bab thread_start + 15\\n"}}'}
+
+    def check_response(self, response: Dict[str, Any]) -&gt; None:
+        """Checks that a JSON response from the WebDriver does not have an
+        error.
+    
+        :Args:
+         - response - The JSON response from the WebDriver server as a dictionary
+           object.
+    
+        :Raises: If the response contains an error message.
+        """
+        status = response.get("status", None)
+        if not status or status == ErrorCode.SUCCESS:
+            return
+        value = None
+        message = response.get("message", "")
+        screen: str = response.get("screen", "")
+        stacktrace = None
+        if isinstance(status, int):
+            value_json = response.get("value", None)
+            if value_json and isinstance(value_json, str):
+                import json
+    
+                try:
+                    value = json.loads(value_json)
+                    if len(value) == 1:
+                        value = value["value"]
+                    status = value.get("error", None)
+                    if not status:
+                        status = value.get("status", ErrorCode.UNKNOWN_ERROR)
+                        message = value.get("value") or value.get("message")
+                        if not isinstance(message, str):
+                            value = message
+                            message = message.get("message")
+                    else:
+                        message = value.get("message", None)
+                except ValueError:
+                    pass
+    
+        exception_class: Type[WebDriverException]
+        e = ErrorCode()
+        error_codes = [item for item in dir(e) if not item.startswith("__")]
+        for error_code in error_codes:
+            error_info = getattr(ErrorCode, error_code)
+            if isinstance(error_info, list) and status in error_info:
+                exception_class = getattr(ExceptionMapping, error_code, WebDriverException)
+                break
+        else:
+            exception_class = WebDriverException
+    
+        if not value:
+            value = response["value"]
+        if isinstance(value, str):
+            raise exception_class(value)
+        if message == "" and "message" in value:
+            message = value["message"]
+    
+        screen = None  # type: ignore[assignment]
+        if "screen" in value:
+            screen = value["screen"]
+    
+        stacktrace = None
+        st_value = value.get("stackTrace") or value.get("stacktrace")
+        if st_value:
+            if isinstance(st_value, str):
+                stacktrace = st_value.split("\n")
+            else:
+                stacktrace = []
+                try:
+                    for frame in st_value:
+                        line = frame.get("lineNumber", "")
+                        file = frame.get("fileName", "&lt;anonymous&gt;")
+                        if line:
+                            file = f"{file}:{line}"
+                        meth = frame.get("methodName", "&lt;anonymous&gt;")
+                        if "className" in frame:
+                            meth = f"{frame['className']}.{meth}"
+                        msg = "    at %s (%s)"
+                        msg = msg % (meth, file)
+                        stacktrace.append(msg)
+                except TypeError:
+                    pass
+        if exception_class == UnexpectedAlertPresentException:
+            alert_text = None
+            if "data" in value:
+                alert_text = value["data"].get("text")
+            elif "alert" in value:
+                alert_text = value["alert"].get("text")
+            raise exception_class(message, screen, stacktrace, alert_text)  # type: ignore[call-arg]  # mypy is not smart enough here
+&gt;       raise exception_class(message, screen, stacktrace)
+E       selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//h6[text()='Basil Chicken Fried Rice']"}
+E         (Session info: chrome=127.0.6533.74); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+E       Stacktrace:
+E       0   chromedriver                        0x000000010a8d5838 chromedriver + 5179448
+E       1   chromedriver                        0x000000010a8cd26a chromedriver + 5145194
+E       2   chromedriver                        0x000000010a4442b0 chromedriver + 389808
+E       3   chromedriver                        0x000000010a4903e1 chromedriver + 701409
+E       4   chromedriver                        0x000000010a490691 chromedriver + 702097
+E       5   chromedriver                        0x000000010a4d2464 chromedriver + 971876
+E       6   chromedriver                        0x000000010a4b27dd chromedriver + 841693
+E       7   chromedriver                        0x000000010a4cfb9b chromedriver + 961435
+E       8   chromedriver                        0x000000010a4b2553 chromedriver + 841043
+E       9   chromedriver                        0x000000010a4837f6 chromedriver + 649206
+E       10  chromedriver                        0x000000010a48405e chromedriver + 651358
+E       11  chromedriver                        0x000000010a898aa0 chromedriver + 4930208
+E       12  chromedriver                        0x000000010a89d9b6 chromedriver + 4950454
+E       13  chromedriver                        0x000000010a89e085 chromedriver + 4952197
+E       14  chromedriver                        0x000000010a87ae69 chromedriver + 4808297
+E       15  chromedriver                        0x000000010a89e379 chromedriver + 4952953
+E       16  chromedriver                        0x000000010a86c7c4 chromedriver + 4749252
+E       17  chromedriver                        0x000000010a8bd548 chromedriver + 5080392
+E       18  chromedriver                        0x000000010a8bd707 chromedriver + 5080839
+E       19  chromedriver                        0x000000010a8cce4e chromedriver + 5144142
+E       20  libsystem_pthread.dylib             0x00007ff810cbe202 _pthread_start + 99
+E       21  libsystem_pthread.dylib             0x00007ff810cb9bab thread_start + 15
+
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/selenium/webdriver/remote/errorhandler.py:229: NoSuchElementException</failure></testcase><testcase classname="test_UserOrder.TestOrderUSer" name="test_UserOder[GetUser0]" time="23.052"><failure message="selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//h6[text()='Thai Shrimp Fried Rice']&quot;}&#10;  (Session info: chrome=127.0.6533.74); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception&#10;Stacktrace:&#10;0   chromedriver                        0x00000001101e6838 chromedriver + 5179448&#10;1   chromedriver                        0x00000001101de26a chromedriver + 5145194&#10;2   chromedriver                        0x000000010fd552b0 chromedriver + 389808&#10;3   chromedriver                        0x000000010fda13e1 chromedriver + 701409&#10;4   chromedriver                        0x000000010fda1691 chromedriver + 702097&#10;5   chromedriver                        0x000000010fde3464 chromedriver + 971876&#10;6   chromedriver                        0x000000010fdc37dd chromedriver + 841693&#10;7   chromedriver                        0x000000010fde0b9b chromedriver + 961435&#10;8   chromedriver                        0x000000010fdc3553 chromedriver + 841043&#10;9   chromedriver                        0x000000010fd947f6 chromedriver + 649206&#10;10  chromedriver                        0x000000010fd9505e chromedriver + 651358&#10;11  chromedriver                        0x00000001101a9aa0 chromedriver + 4930208&#10;12  chromedriver                        0x00000001101ae9b6 chromedriver + 4950454&#10;13  chromedriver                        0x00000001101af085 chromedriver + 4952197&#10;14  chromedriver                        0x000000011018be69 chromedriver + 4808297&#10;15  chromedriver                        0x00000001101af379 chromedriver + 4952953&#10;16  chromedriver                        0x000000011017d7c4 chromedriver + 4749252&#10;17  chromedriver                        0x00000001101ce548 chromedriver + 5080392&#10;18  chromedriver                        0x00000001101ce707 chromedriver + 5080839&#10;19  chromedriver                        0x00000001101dde4e chromedriver + 5144142&#10;20  libsystem_pthread.dylib             0x00007ff810cbe202 _pthread_start + 99&#10;21  libsystem_pthread.dylib             0x00007ff810cb9bab thread_start + 15">self = &lt;tests.test_UserOrder.TestOrderUSer object at 0x10dd1ac30&gt;
+GetUser = {'Pass': '123456', 'user': 'musatest@mailinator.com'}
+
+    def test_UserOder(self, GetUser):
+        log = self.GetLogger()
+        signin = SignIn(self.driver)
+        yourorder = YourOrders(self.driver)
+        self.driver.implicitly_wait(5)
+        signin.Get_Email().send_keys(GetUser["user"])
+        signin.Get_Password().send_keys(GetUser["Pass"])
+        signin.SignIn_Button().click()
+        time.sleep(6)
+    
+&gt;       yourorder.Thai_item2().click()
+
+test_UserOrder.py:29: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+../PageObjects/YourOrders.py:35: in Thai_item2
+    return self.driver.find_element(*YourOrders.thai_item2)
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/selenium/webdriver/remote/webdriver.py:741: in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/selenium/webdriver/remote/webdriver.py:347: in execute
+    self.error_handler.check_response(response)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = &lt;selenium.webdriver.remote.errorhandler.ErrorHandler object at 0x10dd7ebd0&gt;
+response = {'status': 404, 'value': '{"value":{"error":"no such element","message":"no such element: Unable to locate element: {\...7ff810cbe202 _pthread_start + 99\\n21  libsystem_pthread.dylib             0x00007ff810cb9bab thread_start + 15\\n"}}'}
+
+    def check_response(self, response: Dict[str, Any]) -&gt; None:
+        """Checks that a JSON response from the WebDriver does not have an
+        error.
+    
+        :Args:
+         - response - The JSON response from the WebDriver server as a dictionary
+           object.
+    
+        :Raises: If the response contains an error message.
+        """
+        status = response.get("status", None)
+        if not status or status == ErrorCode.SUCCESS:
+            return
+        value = None
+        message = response.get("message", "")
+        screen: str = response.get("screen", "")
+        stacktrace = None
+        if isinstance(status, int):
+            value_json = response.get("value", None)
+            if value_json and isinstance(value_json, str):
+                import json
+    
+                try:
+                    value = json.loads(value_json)
+                    if len(value) == 1:
+                        value = value["value"]
+                    status = value.get("error", None)
+                    if not status:
+                        status = value.get("status", ErrorCode.UNKNOWN_ERROR)
+                        message = value.get("value") or value.get("message")
+                        if not isinstance(message, str):
+                            value = message
+                            message = message.get("message")
+                    else:
+                        message = value.get("message", None)
+                except ValueError:
+                    pass
+    
+        exception_class: Type[WebDriverException]
+        e = ErrorCode()
+        error_codes = [item for item in dir(e) if not item.startswith("__")]
+        for error_code in error_codes:
+            error_info = getattr(ErrorCode, error_code)
+            if isinstance(error_info, list) and status in error_info:
+                exception_class = getattr(ExceptionMapping, error_code, WebDriverException)
+                break
+        else:
+            exception_class = WebDriverException
+    
+        if not value:
+            value = response["value"]
+        if isinstance(value, str):
+            raise exception_class(value)
+        if message == "" and "message" in value:
+            message = value["message"]
+    
+        screen = None  # type: ignore[assignment]
+        if "screen" in value:
+            screen = value["screen"]
+    
+        stacktrace = None
+        st_value = value.get("stackTrace") or value.get("stacktrace")
+        if st_value:
+            if isinstance(st_value, str):
+                stacktrace = st_value.split("\n")
+            else:
+                stacktrace = []
+                try:
+                    for frame in st_value:
+                        line = frame.get("lineNumber", "")
+                        file = frame.get("fileName", "&lt;anonymous&gt;")
+                        if line:
+                            file = f"{file}:{line}"
+                        meth = frame.get("methodName", "&lt;anonymous&gt;")
+                        if "className" in frame:
+                            meth = f"{frame['className']}.{meth}"
+                        msg = "    at %s (%s)"
+                        msg = msg % (meth, file)
+                        stacktrace.append(msg)
+                except TypeError:
+                    pass
+        if exception_class == UnexpectedAlertPresentException:
+            alert_text = None
+            if "data" in value:
+                alert_text = value["data"].get("text")
+            elif "alert" in value:
+                alert_text = value["alert"].get("text")
+            raise exception_class(message, screen, stacktrace, alert_text)  # type: ignore[call-arg]  # mypy is not smart enough here
+&gt;       raise exception_class(message, screen, stacktrace)
+E       selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//h6[text()='Thai Shrimp Fried Rice']"}
+E         (Session info: chrome=127.0.6533.74); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+E       Stacktrace:
+E       0   chromedriver                        0x00000001101e6838 chromedriver + 5179448
+E       1   chromedriver                        0x00000001101de26a chromedriver + 5145194
+E       2   chromedriver                        0x000000010fd552b0 chromedriver + 389808
+E       3   chromedriver                        0x000000010fda13e1 chromedriver + 701409
+E       4   chromedriver                        0x000000010fda1691 chromedriver + 702097
+E       5   chromedriver                        0x000000010fde3464 chromedriver + 971876
+E       6   chromedriver                        0x000000010fdc37dd chromedriver + 841693
+E       7   chromedriver                        0x000000010fde0b9b chromedriver + 961435
+E       8   chromedriver                        0x000000010fdc3553 chromedriver + 841043
+E       9   chromedriver                        0x000000010fd947f6 chromedriver + 649206
+E       10  chromedriver                        0x000000010fd9505e chromedriver + 651358
+E       11  chromedriver                        0x00000001101a9aa0 chromedriver + 4930208
+E       12  chromedriver                        0x00000001101ae9b6 chromedriver + 4950454
+E       13  chromedriver                        0x00000001101af085 chromedriver + 4952197
+E       14  chromedriver                        0x000000011018be69 chromedriver + 4808297
+E       15  chromedriver                        0x00000001101af379 chromedriver + 4952953
+E       16  chromedriver                        0x000000011017d7c4 chromedriver + 4749252
+E       17  chromedriver                        0x00000001101ce548 chromedriver + 5080392
+E       18  chromedriver                        0x00000001101ce707 chromedriver + 5080839
+E       19  chromedriver                        0x00000001101dde4e chromedriver + 5144142
+E       20  libsystem_pthread.dylib             0x00007ff810cbe202 _pthread_start + 99
+E       21  libsystem_pthread.dylib             0x00007ff810cb9bab thread_start + 15
+
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/selenium/webdriver/remote/errorhandler.py:229: NoSuchElementException</failure></testcase></testsuite></testsuites>

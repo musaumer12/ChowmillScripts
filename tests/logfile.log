@@ -1,0 +1,273 @@
+2024-05-13 12:29:40,023 : INFO : test_UserOder : adding dish to Order
+2024-05-13 12:29:40,024 : INFO : test_UserOder : extracting text form order Received pop up
+2024-05-13 12:31:34,412 : INFO : test_AdminOrder : Adding Email
+2024-05-13 12:31:34,476 : INFO : test_AdminOrder : Adding Password
+2024-05-13 12:31:34,540 : INFO : test_AdminOrder : Clicking on Sign in Button 
+2024-05-13 12:31:39,541 : INFO : test_AdminOrder : Clicking on Dish
+2024-05-13 12:31:39,896 : INFO : test_AdminOrder : Selection option from options sets
+2024-05-13 12:31:41,235 : INFO : test_AdminOrder : adding dish to Order
+2024-05-13 12:31:41,235 : INFO : test_AdminOrder : extracting text form order Received pop up
+2024-05-13 12:34:04,981 : INFO : test_AdminOrder : Adding Email
+2024-05-13 12:34:05,035 : INFO : test_AdminOrder : Adding Password
+2024-05-13 12:34:05,087 : INFO : test_AdminOrder : Clicking on Sign in Button 
+2024-05-13 12:34:10,088 : INFO : test_AdminOrder : Clicking on Dish
+2024-05-13 12:34:13,185 : INFO : test_AdminOrder : Selection option from options sets
+2024-05-13 12:34:13,782 : INFO : test_AdminOrder : adding dish to Order
+2024-05-13 12:34:13,783 : INFO : test_AdminOrder : extracting text form order Received pop up
+2024-05-13 12:34:39,597 : INFO : test_UserOder : adding dish to Order
+2024-05-13 12:34:39,597 : INFO : test_UserOder : extracting text form order Received pop up
+2024-05-13 12:35:29,988 : INFO : test_AdminOrder : Adding Email
+2024-05-13 12:35:30,052 : INFO : test_AdminOrder : Adding Password
+2024-05-13 12:35:30,118 : INFO : test_AdminOrder : Clicking on Sign in Button 
+2024-05-13 12:35:35,120 : INFO : test_AdminOrder : Clicking on Dish
+2024-05-13 12:35:39,796 : INFO : test_AdminOrder : Selection option from options sets
+2024-05-13 12:35:39,942 : INFO : test_AdminOrder : adding dish to Order
+2024-05-13 12:35:39,942 : INFO : test_AdminOrder : extracting text form order Received pop up
+2024-05-13 12:50:23,213 : INFO : test_AdminOrder : Adding Email
+2024-05-13 12:50:23,295 : INFO : test_AdminOrder : Adding Password
+2024-05-13 12:50:23,369 : INFO : test_AdminOrder : Clicking on Sign in Button 
+2024-05-13 12:50:28,374 : INFO : test_AdminOrder : Clicking on Dish
+2024-05-13 12:50:31,034 : INFO : test_AdminOrder : Selection option from options sets
+2024-05-13 12:50:31,168 : INFO : test_AdminOrder : adding dish to Order
+2024-05-13 12:50:31,168 : INFO : test_AdminOrder : extracting text form order Received pop up
+2024-05-13 12:52:39,285 : INFO : test_AdminOrder : Adding Email
+2024-05-13 12:52:39,365 : INFO : test_AdminOrder : Adding Password
+2024-05-13 12:52:39,436 : INFO : test_AdminOrder : Clicking on Sign in Button 
+2024-05-13 12:52:44,438 : INFO : test_AdminOrder : Clicking on Dish
+2024-05-13 12:52:45,187 : INFO : test_AdminOrder : Selection option from options sets
+2024-05-13 12:52:46,246 : INFO : test_AdminOrder : adding dish to Order
+2024-05-13 12:52:46,246 : INFO : test_AdminOrder : extracting text form order Received pop up
+2024-05-13 12:54:43,750 : INFO : test_AdminOrder : Adding Email
+2024-05-13 12:54:43,826 : INFO : test_AdminOrder : Adding Password
+2024-05-13 12:54:43,889 : INFO : test_AdminOrder : Clicking on Sign in Button 
+2024-05-13 12:54:48,893 : INFO : test_AdminOrder : Clicking on Dish
+2024-05-13 12:54:50,859 : INFO : test_AdminOrder : Selection option from options sets
+2024-05-13 12:54:51,342 : INFO : test_AdminOrder : adding dish to Order
+2024-05-13 12:54:51,342 : INFO : test_AdminOrder : extracting text form order Received pop up
+2024-05-13 12:57:08,972 : INFO : test_AdminOrder : Adding Email
+2024-05-13 12:57:09,038 : INFO : test_AdminOrder : Adding Password
+2024-05-13 12:57:09,102 : INFO : test_AdminOrder : Clicking on Sign in Button 
+2024-05-13 12:57:14,106 : INFO : test_AdminOrder : Clicking on Dish
+2024-05-13 12:57:17,489 : INFO : test_AdminOrder : Selection option from options sets
+2024-05-13 12:57:17,670 : INFO : test_AdminOrder : adding dish to Order
+2024-05-13 12:57:17,670 : INFO : test_AdminOrder : extracting text form order Received pop up
+2024-05-13 12:58:02,941 : INFO : test_AdminOrder : Adding Email
+2024-05-13 12:58:03,019 : INFO : test_AdminOrder : Adding Password
+2024-05-13 12:58:03,100 : INFO : test_AdminOrder : Clicking on Sign in Button 
+2024-05-13 12:58:08,105 : INFO : test_AdminOrder : Clicking on Dish
+2024-05-13 12:58:10,811 : INFO : test_AdminOrder : Selection option from options sets
+2024-05-13 12:58:10,972 : INFO : test_AdminOrder : adding dish to Order
+2024-05-13 12:58:10,973 : INFO : test_AdminOrder : extracting text form order Received pop up
+2024-05-13 12:59:27,304 : INFO : test_AdminOrder : Adding Email
+2024-05-13 12:59:27,371 : INFO : test_AdminOrder : Adding Password
+2024-05-13 12:59:27,430 : INFO : test_AdminOrder : Clicking on Sign in Button 
+2024-05-13 12:59:32,434 : INFO : test_AdminOrder : Clicking on Dish
+2024-05-13 12:59:32,995 : INFO : test_AdminOrder : Selection option from options sets
+2024-05-13 12:59:33,298 : INFO : test_AdminOrder : adding dish to Order
+2024-05-13 12:59:33,298 : INFO : test_AdminOrder : extracting text form order Received pop up
+2024-05-13 12:59:52,933 : INFO : test_UserOder : adding dish to Order
+2024-05-13 12:59:52,933 : INFO : test_UserOder : extracting text form order Received pop up
+2024-05-13 14:32:27,969 : INFO : test_AdminOrder : Adding Email
+2024-05-13 14:32:28,037 : INFO : test_AdminOrder : Adding Password
+2024-05-13 14:32:28,106 : INFO : test_AdminOrder : Clicking on Sign in Button 
+2024-05-13 14:32:33,107 : INFO : test_AdminOrder : Clicking on Dish
+2024-05-13 14:32:33,955 : INFO : test_AdminOrder : Selection option from options sets
+2024-05-13 14:32:34,291 : INFO : test_AdminOrder : adding dish to Order
+2024-05-13 14:32:34,291 : INFO : test_AdminOrder : extracting text form order Received pop up
+2024-05-13 14:32:50,200 : INFO : test_UserOder : adding dish to Order
+2024-05-13 14:32:50,200 : INFO : test_UserOder : extracting text form order Received pop up
+2024-05-13 14:35:33,397 : INFO : test_AdminOrder : Adding Email
+2024-05-13 14:35:33,458 : INFO : test_AdminOrder : Adding Password
+2024-05-13 14:35:33,533 : INFO : test_AdminOrder : Clicking on Sign in Button 
+2024-05-13 14:35:38,538 : INFO : test_AdminOrder : Clicking on Dish
+2024-05-13 14:35:41,365 : INFO : test_AdminOrder : Selection option from options sets
+2024-05-13 14:35:41,488 : INFO : test_AdminOrder : adding dish to Order
+2024-05-13 14:35:41,488 : INFO : test_AdminOrder : extracting text form order Received pop up
+2024-05-13 14:38:47,248 : INFO : test_UserOder : adding dish to Order
+2024-05-13 14:38:47,249 : INFO : test_UserOder : extracting text form order Received pop up
+2024-05-13 14:42:51,810 : INFO : test_UserOder : adding dish to Order
+2024-05-13 14:42:51,812 : INFO : test_UserOder : extracting text form order Received pop up
+2024-05-13 14:43:51,837 : INFO : test_UserOder : adding dish to Order
+2024-05-13 14:43:55,840 : INFO : test_UserOder : extracting text form order Received pop up
+2024-05-13 14:44:43,616 : INFO : test_UserOder : adding dish to Order
+2024-05-13 14:44:55,327 : INFO : test_UserOder : extracting text form order Received pop up
+2024-05-13 14:45:37,456 : INFO : test_UserOder : adding dish to Order
+2024-05-13 14:45:41,459 : INFO : test_UserOder : extracting text form order Received pop up
+2024-05-13 14:51:32,296 : INFO : test_UserOder : adding dish to Order
+2024-05-13 14:51:36,299 : INFO : test_UserOder : extracting text form order Received pop up
+2024-05-13 14:53:18,442 : INFO : test_UserOder : adding dish to Order
+2024-05-13 14:53:22,447 : INFO : test_UserOder : extracting text form order Received pop up
+2024-05-13 14:54:01,598 : INFO : test_AdminOrder : Adding Email
+2024-05-13 14:54:01,729 : INFO : test_AdminOrder : Adding Password
+2024-05-13 14:54:01,799 : INFO : test_AdminOrder : Clicking on Sign in Button 
+2024-05-13 14:54:06,804 : INFO : test_AdminOrder : Clicking on Dish
+2024-05-13 14:54:07,409 : INFO : test_AdminOrder : Selection option from options sets
+2024-05-13 14:54:07,630 : INFO : test_AdminOrder : adding dish to Order
+2024-05-13 14:54:07,630 : INFO : test_AdminOrder : extracting text form order Received pop up
+2024-05-13 14:54:23,886 : INFO : test_UserOder : adding dish to Order
+2024-05-13 14:54:27,887 : INFO : test_UserOder : extracting text form order Received pop up
+2024-05-13 16:30:32,307 : INFO : test_AdminNewDelivery : Adding Email
+2024-05-13 16:30:32,378 : INFO : test_AdminNewDelivery : Adding Password
+2024-05-13 16:30:32,455 : INFO : test_AdminNewDelivery : Clicking on Sign in Button 
+2024-05-13 16:56:21,754 : INFO : test_AdminNewDelivery : Adding Email
+2024-05-13 16:56:21,811 : INFO : test_AdminNewDelivery : Adding Password
+2024-05-13 16:56:21,864 : INFO : test_AdminNewDelivery : Clicking on Sign in Button 
+2024-05-13 16:57:16,362 : INFO : test_AdminNewDelivery : Adding Email
+2024-05-13 16:57:16,422 : INFO : test_AdminNewDelivery : Adding Password
+2024-05-13 16:57:16,475 : INFO : test_AdminNewDelivery : Clicking on Sign in Button 
+2024-05-13 16:59:18,729 : INFO : test_AdminNewDelivery : Adding Email
+2024-05-13 16:59:18,803 : INFO : test_AdminNewDelivery : Adding Password
+2024-05-13 16:59:18,860 : INFO : test_AdminNewDelivery : Clicking on Sign in Button 
+2024-05-13 17:00:03,301 : INFO : test_AdminNewDelivery : Adding Email
+2024-05-13 17:00:03,396 : INFO : test_AdminNewDelivery : Adding Password
+2024-05-13 17:00:03,451 : INFO : test_AdminNewDelivery : Clicking on Sign in Button 
+2024-05-13 17:01:18,036 : INFO : test_AdminNewDelivery : Adding Email
+2024-05-13 17:01:18,134 : INFO : test_AdminNewDelivery : Adding Password
+2024-05-13 17:01:18,203 : INFO : test_AdminNewDelivery : Clicking on Sign in Button 
+2024-05-13 17:01:47,882 : INFO : test_AdminNewDelivery : Adding Email
+2024-05-13 17:01:47,945 : INFO : test_AdminNewDelivery : Adding Password
+2024-05-13 17:01:47,996 : INFO : test_AdminNewDelivery : Clicking on Sign in Button 
+2024-05-13 17:05:28,160 : INFO : test_AdminNewDelivery : Adding Email
+2024-05-13 17:05:28,224 : INFO : test_AdminNewDelivery : Adding Password
+2024-05-13 17:05:28,280 : INFO : test_AdminNewDelivery : Clicking on Sign in Button 
+2024-05-13 17:06:00,008 : INFO : test_AdminNewDelivery : Adding Email
+2024-05-13 17:06:00,093 : INFO : test_AdminNewDelivery : Adding Password
+2024-05-13 17:06:00,152 : INFO : test_AdminNewDelivery : Clicking on Sign in Button 
+2024-05-13 17:08:10,079 : INFO : test_AdminNewDelivery : Adding Email
+2024-05-13 17:08:10,151 : INFO : test_AdminNewDelivery : Adding Password
+2024-05-13 17:08:10,213 : INFO : test_AdminNewDelivery : Clicking on Sign in Button 
+2024-05-13 18:07:13,039 : INFO : test_AdminNewDelivery : Adding Email
+2024-05-13 18:07:13,099 : INFO : test_AdminNewDelivery : Adding Password
+2024-05-13 18:07:13,154 : INFO : test_AdminNewDelivery : Clicking on Sign in Button 
+2024-05-13 18:35:57,802 : INFO : test_AdminNewDelivery : Adding Email
+2024-05-13 18:35:57,866 : INFO : test_AdminNewDelivery : Adding Password
+2024-05-13 18:35:57,920 : INFO : test_AdminNewDelivery : Clicking on Sign in Button 
+2024-05-13 18:38:12,909 : INFO : test_AdminNewDelivery : Adding Email
+2024-05-13 18:38:13,005 : INFO : test_AdminNewDelivery : Adding Password
+2024-05-13 18:38:13,072 : INFO : test_AdminNewDelivery : Clicking on Sign in Button 
+2024-05-13 18:39:01,620 : INFO : test_AdminNewDelivery : Adding Email
+2024-05-13 18:39:01,678 : INFO : test_AdminNewDelivery : Adding Password
+2024-05-13 18:39:01,730 : INFO : test_AdminNewDelivery : Clicking on Sign in Button 
+2024-05-13 18:46:24,529 : INFO : test_AdminNewDelivery : Adding Email
+2024-05-13 18:46:24,602 : INFO : test_AdminNewDelivery : Adding Password
+2024-05-13 18:46:24,667 : INFO : test_AdminNewDelivery : Clicking on Sign in Button 
+2024-05-14 11:09:26,778 : INFO : test_AdminNewDelivery : Adding Email
+2024-05-14 11:09:26,840 : INFO : test_AdminNewDelivery : Adding Password
+2024-05-14 11:09:26,903 : INFO : test_AdminNewDelivery : Clicking on Sign in Button 
+2024-05-14 11:18:43,383 : INFO : test_AdminNewDelivery : Adding Email
+2024-05-14 11:18:43,440 : INFO : test_AdminNewDelivery : Adding Password
+2024-05-14 11:18:43,490 : INFO : test_AdminNewDelivery : Clicking on Sign in Button 
+2024-05-14 11:20:47,997 : INFO : test_AdminNewDelivery : Adding Email
+2024-05-14 11:20:48,051 : INFO : test_AdminNewDelivery : Adding Password
+2024-05-14 11:20:48,098 : INFO : test_AdminNewDelivery : Clicking on Sign in Button 
+2024-05-14 11:27:45,340 : INFO : test_AdminNewDelivery : Adding Email
+2024-05-14 11:27:45,414 : INFO : test_AdminNewDelivery : Adding Password
+2024-05-14 11:27:45,468 : INFO : test_AdminNewDelivery : Clicking on Sign in Button 
+2024-05-14 11:28:44,483 : INFO : test_AdminNewDelivery : Adding Email
+2024-05-14 11:28:44,537 : INFO : test_AdminNewDelivery : Adding Password
+2024-05-14 11:28:44,584 : INFO : test_AdminNewDelivery : Clicking on Sign in Button 
+2024-05-14 11:30:19,100 : INFO : test_AdminNewDelivery : Adding Email
+2024-05-14 11:30:19,172 : INFO : test_AdminNewDelivery : Adding Password
+2024-05-14 11:30:19,231 : INFO : test_AdminNewDelivery : Clicking on Sign in Button 
+2024-05-14 11:32:42,914 : INFO : test_AdminNewDelivery : Adding Email
+2024-05-14 11:32:42,968 : INFO : test_AdminNewDelivery : Adding Password
+2024-05-14 11:32:43,018 : INFO : test_AdminNewDelivery : Clicking on Sign in Button 
+2024-05-14 11:34:37,320 : INFO : test_AdminNewDelivery : Adding Email
+2024-05-14 11:34:37,398 : INFO : test_AdminNewDelivery : Adding Password
+2024-05-14 11:34:37,452 : INFO : test_AdminNewDelivery : Clicking on Sign in Button 
+2024-05-14 11:40:32,305 : INFO : test_AdminNewDelivery : Adding Email
+2024-05-14 11:40:32,362 : INFO : test_AdminNewDelivery : Adding Password
+2024-05-14 11:40:32,412 : INFO : test_AdminNewDelivery : Clicking on Sign in Button 
+2024-05-14 12:17:48,305 : INFO : test_AdminNewDelivery : Adding Email
+2024-05-14 12:17:48,363 : INFO : test_AdminNewDelivery : Adding Password
+2024-05-14 12:17:48,413 : INFO : test_AdminNewDelivery : Clicking on Sign in Button 
+2024-05-14 12:35:38,388 : INFO : test_AdminNewDelivery : Adding Email
+2024-05-14 12:35:38,483 : INFO : test_AdminNewDelivery : Adding Password
+2024-05-14 12:35:38,538 : INFO : test_AdminNewDelivery : Clicking on Sign in Button 
+2024-05-14 14:45:37,225 : INFO : test_AdminNewDelivery : Adding Email
+2024-05-14 14:45:37,283 : INFO : test_AdminNewDelivery : Adding Password
+2024-05-14 14:45:37,332 : INFO : test_AdminNewDelivery : Clicking on Sign in Button 
+2024-05-14 14:48:25,546 : INFO : test_AdminNewDelivery : Adding Email
+2024-05-14 14:48:25,606 : INFO : test_AdminNewDelivery : Adding Password
+2024-05-14 14:48:25,657 : INFO : test_AdminNewDelivery : Clicking on Sign in Button 
+2024-05-15 16:44:09,333 : INFO : test_AdminNewDelivery : Adding Email
+2024-05-15 16:44:09,426 : INFO : test_AdminNewDelivery : Adding Password
+2024-05-15 16:44:09,490 : INFO : test_AdminNewDelivery : Clicking on Sign in Button 
+2024-05-15 16:44:41,984 : INFO : test_AdminOrder : Adding Email
+2024-05-15 16:44:42,035 : INFO : test_AdminOrder : Adding Password
+2024-05-15 16:44:42,081 : INFO : test_AdminOrder : Clicking on Sign in Button 
+2024-05-15 16:44:47,084 : INFO : test_AdminOrder : Clicking on Dish
+2024-05-15 16:44:49,801 : INFO : test_AdminOrder : Selection option from options sets
+2024-05-15 16:44:49,980 : INFO : test_AdminOrder : adding dish to Order
+2024-05-15 16:44:49,980 : INFO : test_AdminOrder : extracting text form order Received pop up
+2024-05-16 11:28:07,651 : INFO : test_AdminNewDelivery : Adding Email
+2024-05-16 11:28:07,743 : INFO : test_AdminNewDelivery : Adding Password
+2024-05-16 11:28:07,802 : INFO : test_AdminNewDelivery : Clicking on Sign in Button 
+2024-05-16 11:28:36,739 : INFO : test_AdminOrder : Adding Email
+2024-05-16 11:28:36,792 : INFO : test_AdminOrder : Adding Password
+2024-05-16 11:28:36,846 : INFO : test_AdminOrder : Clicking on Sign in Button 
+2024-05-16 11:28:41,848 : INFO : test_AdminOrder : Clicking on Dish
+2024-05-16 11:32:38,909 : INFO : test_AdminOrder : Adding Email
+2024-05-16 11:32:38,985 : INFO : test_AdminOrder : Adding Password
+2024-05-16 11:32:39,045 : INFO : test_AdminOrder : Clicking on Sign in Button 
+2024-05-16 11:32:44,050 : INFO : test_AdminOrder : Clicking on Dish
+2024-05-16 11:36:16,889 : INFO : test_AdminOrder : Adding Email
+2024-05-16 11:36:16,949 : INFO : test_AdminOrder : Adding Password
+2024-05-16 11:36:17,012 : INFO : test_AdminOrder : Clicking on Sign in Button 
+2024-05-16 11:36:22,017 : INFO : test_AdminOrder : Clicking on Dish
+2024-05-16 11:36:25,416 : INFO : test_AdminOrder : Selection option from options sets
+2024-05-16 11:36:44,272 : INFO : test_UserOder : adding dish to Order
+2024-05-16 11:36:48,276 : INFO : test_UserOder : extracting text form order Received pop up
+2024-05-16 15:19:36,069 : INFO : test_AdminNewDelivery : Adding Email
+2024-05-16 15:19:36,146 : INFO : test_AdminNewDelivery : Adding Password
+2024-05-16 15:19:36,204 : INFO : test_AdminNewDelivery : Clicking on Sign in Button 
+2024-05-16 15:19:59,584 : INFO : test_AdminOrder : Adding Email
+2024-05-16 15:19:59,643 : INFO : test_AdminOrder : Adding Password
+2024-05-16 15:19:59,705 : INFO : test_AdminOrder : Clicking on Sign in Button 
+2024-05-16 15:20:04,708 : INFO : test_AdminOrder : Clicking on Dish
+2024-05-16 15:20:05,356 : INFO : test_AdminOrder : Selection option from options sets
+2024-05-17 11:51:14,140 : INFO : test_AdminNewDelivery : Adding Email
+2024-05-17 11:51:14,250 : INFO : test_AdminNewDelivery : Adding Password
+2024-05-17 11:51:14,324 : INFO : test_AdminNewDelivery : Clicking on Sign in Button 
+2024-05-17 11:55:49,674 : INFO : test_AdminNewDelivery : Adding Email
+2024-05-17 11:55:49,698 : INFO : test_AdminNewDelivery : Adding Password
+2024-05-17 11:55:49,946 : INFO : test_AdminNewDelivery : Clicking on Sign in Button 
+2024-05-17 11:56:22,104 : INFO : test_AdminOrder : Adding Email
+2024-05-17 11:56:22,126 : INFO : test_AdminOrder : Adding Password
+2024-05-17 11:56:22,357 : INFO : test_AdminOrder : Clicking on Sign in Button 
+2024-05-17 11:56:27,363 : INFO : test_AdminOrder : Clicking on Dish
+2024-05-17 11:56:28,176 : INFO : test_AdminOrder : Selection option from options sets
+2024-05-20 17:33:10,436 : INFO : test_AdminNewDelivery : Adding Email
+2024-05-20 17:33:10,501 : INFO : test_AdminNewDelivery : Adding Password
+2024-05-20 17:33:10,555 : INFO : test_AdminNewDelivery : Clicking on Sign in Button 
+2024-05-20 17:34:13,049 : INFO : test_AdminNewDelivery : Adding Email
+2024-05-20 17:34:13,114 : INFO : test_AdminNewDelivery : Adding Password
+2024-05-20 17:34:13,165 : INFO : test_AdminNewDelivery : Clicking on Sign in Button 
+2024-06-03 14:57:41,659 : INFO : test_AdminNewDelivery : Adding Email
+2024-06-03 14:57:42,291 : INFO : test_AdminNewDelivery : Adding Password
+2024-06-03 14:57:42,752 : INFO : test_AdminNewDelivery : Clicking on Sign in Button 
+2024-06-03 15:07:55,114 : INFO : test_AdminNewDelivery : Adding Email
+2024-06-03 15:07:55,950 : INFO : test_AdminNewDelivery : Adding Password
+2024-06-03 15:07:56,831 : INFO : test_AdminNewDelivery : Clicking on Sign in Button 
+2024-06-03 15:48:24,309 : INFO : test_AdminOrder : Adding Email
+2024-06-03 15:48:24,398 : INFO : test_AdminOrder : Adding Password
+2024-06-03 15:48:24,480 : INFO : test_AdminOrder : Clicking on Sign in Button 
+2024-06-03 15:48:29,484 : INFO : test_AdminOrder : Clicking on Dish
+2024-06-03 15:48:29,629 : INFO : test_AdminOrder : Selection option from options sets
+2024-06-21 12:19:34,034 : INFO : test_AdminNewDelivery : Adding Email
+2024-06-21 12:19:34,099 : INFO : test_AdminNewDelivery : Adding Password
+2024-06-21 12:19:34,154 : INFO : test_AdminNewDelivery : Clicking on Sign in Button 
+2024-06-21 12:19:59,735 : INFO : test_AdminOrder : Adding Email
+2024-06-21 12:19:59,800 : INFO : test_AdminOrder : Adding Password
+2024-06-21 12:19:59,871 : INFO : test_AdminOrder : Clicking on Sign in Button 
+2024-06-21 12:20:04,872 : INFO : test_AdminOrder : Clicking on Dish
+2024-06-21 12:20:09,768 : INFO : test_AdminOrder : Selection option from options sets
+2024-06-21 12:20:09,869 : INFO : test_AdminOrder : adding dish to Order
+2024-06-21 12:20:09,869 : INFO : test_AdminOrder : extracting text form order Received pop up
+2024-08-01 18:06:59,165 : INFO : test_AdminNewDelivery : Adding Email
+2024-08-01 18:06:59,237 : INFO : test_AdminNewDelivery : Adding Password
+2024-08-01 18:06:59,300 : INFO : test_AdminNewDelivery : Clicking on Sign in Button 
+2024-08-01 18:07:32,644 : INFO : test_AdminOrder : Adding Email
+2024-08-01 18:07:32,694 : INFO : test_AdminOrder : Adding Password
+2024-08-01 18:07:32,740 : INFO : test_AdminOrder : Clicking on Sign in Button 
+2024-08-01 18:07:37,743 : INFO : test_AdminOrder : Clicking on Dish
